@@ -1,0 +1,15 @@
+{
+  "name": "ce-samples-script-extensions-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.0.0",
+    "request-promise-native": "^1.0.9"
+  }
+}
