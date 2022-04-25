@@ -33,7 +33,7 @@ test('idp discovery filters by query param present', () => {
 })
 
 
-test('idp discovery filters by query param not present', () => {
+test('idp discovery returns empty array idp not present', () => {
 
     let input = {
         "context": {
