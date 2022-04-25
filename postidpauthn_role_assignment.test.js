@@ -10,7 +10,7 @@ test('user specific role should be returned', () => {
     }
   }
 
-  var expectedResponseJson = {
+  var expected = {
     "authn_ctx": {
       "roles": [
         "USER_ACCESS_X"
@@ -19,7 +19,7 @@ test('user specific role should be returned', () => {
   };
 
   return postidpauthn(input.context).then(data => {
-    expect(data).toStrictEqual(expectedResponseJson);
+    expect(data).toStrictEqual(expected);
   });
 })
 
@@ -33,7 +33,7 @@ test('default role should be returned', () => {
     }
   }
 
-  var expectedResponseJson = {
+  var expected = {
     "authn_ctx": {
       "roles": [
         "DEFAULT_ROLE"
@@ -42,7 +42,7 @@ test('default role should be returned', () => {
   };
 
   return postidpauthn(input.context).then(data => {
-    expect(data).toStrictEqual(expectedResponseJson);
+    expect(data).toStrictEqual(expected);
   });
 })
 
